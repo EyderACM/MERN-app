@@ -206,13 +206,21 @@ router.post(
   }
 );
 
-// @route   PUT api/posts/comments/remove/:id
+// @route   delete api/posts/comments/:id/:comment_id
 // @desc    Remove a post
 // @access  Private
 
-router.put('/comments/remove/:id', auth, (req, res) => {
+router.delete('/comments/:id/:comment_id', auth, async (req, res) => {
   try {
-    const post = Post.findById(req.params.id);
+    const post = await Post.findById(req.params.id);
+
+    const comment = post.comments.find(
+      comment => comment.id === req.params.comment_id
+    );
+
+    if (!comment) {
+      return res.status(404).json({ msg: 'Make sure comment exists' });
+    }
 
     if (post.user.toString() !== req.user.id) {
       return res.status(401).json({ msg: 'Not authorized' });
@@ -220,8 +228,17 @@ router.put('/comments/remove/:id', auth, (req, res) => {
 
     const removeIndex = post.comments
       .map(comment => comment.user.toString())
-      .indexOf();
-  } catch (erro) {}
+      .indexOf(req.user.id);
+
+    post.comments.splice(removeIndex, 1);
+
+    await post.save();
+
+    res.json(post.comments);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server error');
+  }
 });
 
 module.exports = router;
