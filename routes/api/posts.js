@@ -166,27 +166,62 @@ router.put('/unlike/:id', auth, async (req, res) => {
 // @desc    Comment a post
 // @access  Private
 
-router.post('/comments/:id', auth, async (req, res) => {
-  try {
-    const post = await Post.findById(req.params.id);
+router.post(
+  '/comments/:id',
+  [
+    auth,
+    [
+      check('text', 'Text is required')
+        .not()
+        .isEmpty()
+    ]
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
 
-    const { text } = req.body;
+    try {
+      const post = await Post.findById(req.params.id);
+      const user = await User.findById(req.user.id).select('-password');
 
-    post.comments.unshift({
-      user: req.user.id,
-      text,
-      name: req.user.name,
-      avatar: req.user.avatar,
-      date: Date.now()
-    });
+      const { text } = req.body;
 
-    await post.save();
+      post.comments.unshift({
+        user: req.user.id,
+        text,
+        name: user.name,
+        avatar: user.avatar,
+        date: Date.now()
+      });
 
-    res.json(post.comments);
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server error');
+      await post.save();
+
+      res.json(post.comments);
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send('Server error');
+    }
   }
+);
+
+// @route   PUT api/posts/comments/remove/:id
+// @desc    Remove a post
+// @access  Private
+
+router.put('/comments/remove/:id', auth, (req, res) => {
+  try {
+    const post = Post.findById(req.params.id);
+
+    if (post.user.toString() !== req.user.id) {
+      return res.status(401).json({ msg: 'Not authorized' });
+    }
+
+    const removeIndex = post.comments
+      .map(comment => comment.user.toString())
+      .indexOf();
+  } catch (erro) {}
 });
 
 module.exports = router;
