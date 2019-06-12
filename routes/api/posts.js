@@ -162,4 +162,31 @@ router.put('/unlike/:id', auth, async (req, res) => {
   }
 });
 
+// @route   POST api/posts/comments/:id
+// @desc    Comment a post
+// @access  Private
+
+router.post('/comments/:id', auth, async (req, res) => {
+  try {
+    const post = await Post.findById(req.params.id);
+
+    const { text } = req.body;
+
+    post.comments.unshift({
+      user: req.user.id,
+      text,
+      name: req.user.name,
+      avatar: req.user.avatar,
+      date: Date.now()
+    });
+
+    await post.save();
+
+    res.json(post.comments);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server error');
+  }
+});
+
 module.exports = router;
