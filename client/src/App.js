@@ -1,15 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Fragment className='App'>
+    <h1>App</h1>
+  </Fragment>
+);
 
 export default App;
