@@ -1,9 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 
-const App: React.FC = () => (
-  <div className='App'>
+export const App: React.FC = () => (
+  <React.Fragment>
     <h1>Testing</h1>
-  </div>
+  </React.Fragment>
 );
-
-export default App;
