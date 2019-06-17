@@ -1,9 +1,7 @@
-import React, { Fragment } from 'react';
+import * as React from 'react';
 
-const App = () => (
-  <Fragment className='App'>
-    <h1>App</h1>
-  </Fragment>
-);
-
-export default App;
+export default class App extends React.Component {
+  render() {
+    return <h1>Stuff</h1>;
+  }
+}
