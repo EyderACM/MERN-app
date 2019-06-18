@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavbarContainer } from './NavbarContainer';
-import { H1 } from '../ui/H1/H1';
+import { Logo } from '../ui/Logo/Logo';
 
 export const Navbar: React.FC = () => (
   <NavbarContainer dynamic={false}>
-    <H1 weight='semi-bold'>Stuff</H1>
+    <Logo weight='semi-bold'>Stuff</Logo>
   </NavbarContainer>
 );
