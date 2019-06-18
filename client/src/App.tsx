@@ -8,7 +8,7 @@ export const App: React.FC = () => (
     <GlobalWrapper>
       <Navbar />
       <H1 color='secondary' weight='semi-bold'>
-        Testing
+        Lorem ipsum dolor sit amet consectetur adipisicing.
       </H1>
     </GlobalWrapper>
   </React.Fragment>

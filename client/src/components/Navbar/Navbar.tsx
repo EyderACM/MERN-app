@@ -4,6 +4,6 @@ import { Logo } from '../ui/Logo/Logo';
 
 export const Navbar: React.FC = () => (
   <NavbarContainer dynamic={false}>
-    <Logo weight='semi-bold'>Stuff</Logo>
+    <Logo weight='semi-bold'>Linkedon</Logo>
   </NavbarContainer>
 );

@@ -1,4 +1,4 @@
-import * as Colors from '../../../styles/Colors';
+import * as Colors from '../../styles/Colors';
 
 export const fontWeight = (variant: String = '400') => {
   switch (variant) {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontWeight, fontColor } from './utils';
+import { fontWeight, fontColor } from '../utils';
 
 export interface IH1Props {
   color?: 'primary' | 'secondary';
