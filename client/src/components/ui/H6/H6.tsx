@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 import { fontWeight, fontColor } from '../utils';
 
-export interface ILogoProps {
+export interface IH6Props {
   color?: 'primary' | 'secondary';
+  weight?: 'regular' | 'semi-bold';
 }
 
-export const Logo = styled.h1`
+export const H6 = styled.h6<IH6Props>`
   color: ${props => fontColor(props.color)};
   font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: ${props => fontWeight(props.weight)};
+  margin: 0;
 `;

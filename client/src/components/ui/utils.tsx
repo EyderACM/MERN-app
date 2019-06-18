@@ -1,10 +1,16 @@
 import * as Colors from '../../styles/Colors';
 
-export const fontWeight = (variant: String = '400') => {
+export const fontWeight = (variant: String = 'regular') => {
+  let fontWeight;
   switch (variant) {
     case 'semi-bold':
-      return '600';
+      fontWeight = '600';
+      break;
+    case 'regular':
+      fontWeight = '400';
+      break;
   }
+  return fontWeight;
 };
 
 export const fontColor = (variant: String = 'primary') => {

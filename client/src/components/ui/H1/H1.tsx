@@ -6,7 +6,7 @@ export interface IH1Props {
   weight?: 'regular' | 'semi-bold';
 }
 
-export const H1 = styled.div<IH1Props>`
+export const H1 = styled.h1<IH1Props>`
   color: ${props => fontColor(props.color)};
   font-family: Montserrat;
   font-size: 24px;
