@@ -1,7 +1,11 @@
 import React from 'react';
+import { MainImage } from '../../components/MainImage/MainImage';
+import { ImageWrapper } from './components/ImageWrapper';
 
 export const LandingPage: React.FC = () => (
-  <div>
-    <h1>Landing Stuff</h1>
-  </div>
+  <React.Fragment>
+    <ImageWrapper>
+      <MainImage imageSize='mobile' />
+    </ImageWrapper>
+  </React.Fragment>
 );

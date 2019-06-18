@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { GlobalWrapper } from './components/GlobalWrapper/GlobalWrapper';
-import { MainImage } from './components/MainImage/MainImage';
+import { LandingPage } from './Views/LandingPage/LandingPage';
 export const App: React.FC = () => (
   <React.Fragment>
     <GlobalWrapper>
-      <MainImage />
+      <LandingPage />
     </GlobalWrapper>
   </React.Fragment>
 );

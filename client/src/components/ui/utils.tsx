@@ -1,4 +1,5 @@
 import * as Colors from '../../styles/Colors';
+import * as Units from '../../styles/Units';
 
 export const fontWeight = (variant: String = 'regular') => {
   let fontWeight;
@@ -23,4 +24,13 @@ export const fontColor = (variant: String = 'primary') => {
       return Colors.SCARY_GREY;
   }
   return colorPicked;
+};
+
+export const imageSize = (variant: String = 'mobile') => {
+  switch (variant) {
+    case 'mobile':
+      return Units.MOBILE_IMAGE;
+    case 'desktop':
+      return Units.DESKTOP_IMAGE;
+  }
 };

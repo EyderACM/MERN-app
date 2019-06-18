@@ -1,12 +1,17 @@
 import * as React from 'react';
+import { imageSize } from '../ui/utils';
 
-export const MainImage: React.FC = () => (
+export interface IMainImageProps {
+  imageSize?: 'mobile' | 'desktop';
+}
+
+export const MainImage = (props: IMainImageProps) => (
   <svg
     id='aff71ab5-257b-4a41-8490-967d8a55fbdf'
     data-name='Layer 1'
     xmlns='http://www.w3.org/2000/svg'
-    width='830.3448'
-    height='665.26174'
+    width={imageSize(props.imageSize)}
+    height={imageSize(props.imageSize)}
     viewBox='0 0 830.3448 665.26174'
   >
     <title>insert block</title>
