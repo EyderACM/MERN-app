@@ -1,15 +1,10 @@
 import * as React from 'react';
-import { Navbar } from './components/Navbar/Navbar';
 import { GlobalWrapper } from './components/GlobalWrapper/GlobalWrapper';
-import { H6 } from './components/ui/H6/H6';
-
+import { MainImage } from './components/MainImage/MainImage';
 export const App: React.FC = () => (
   <React.Fragment>
     <GlobalWrapper>
-      <Navbar />
-      <H6 color='secondary' weight='semi-bold'>
-        Lorem ipsum dolor sit amet consectetur adipisicing.
-      </H6>
+      <MainImage />
     </GlobalWrapper>
   </React.Fragment>
 );

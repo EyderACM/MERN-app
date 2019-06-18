@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontWeight, fontColor } from '../utils';
+import { fontColor } from '../utils';
 
 export interface ILogoProps {
   color?: 'primary' | 'secondary';
