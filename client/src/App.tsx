@@ -7,7 +7,7 @@ export const App: React.FC = () => (
   <React.Fragment>
     <GlobalWrapper>
       <Navbar />
-      <H1 dynamic={true} weight='semi-bold'>
+      <H1 color='secondary' weight='semi-bold'>
         Testing
       </H1>
     </GlobalWrapper>

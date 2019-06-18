@@ -5,8 +5,7 @@ export interface INavbarContainerProps {
 }
 
 export const NavbarContainer = styled.div<INavbarContainerProps>`
-  align-items: center;    
-  background: red;
+  align-items: center;      
   background: ${props => (props.dynamic ? 'blue' : '')}
   color: black;
   display: flex;    
