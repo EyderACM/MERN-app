@@ -18,10 +18,10 @@ export const LandingPage: React.FC = () => (
         Meet the most talented developers in your zone, network, and share cool
         hacks.
       </H3>
-      <LandingButtonWrapper>
-        <Button color='primary'>Sign up</Button>
-        <Button color='transparent'>Login</Button>
-      </LandingButtonWrapper>
     </LandingTextWrapper>
+    <LandingButtonWrapper>
+      <Button color='primary'>Sign up</Button>
+      <Button color='transparent'>Login</Button>
+    </LandingButtonWrapper>
   </React.Fragment>
 );
