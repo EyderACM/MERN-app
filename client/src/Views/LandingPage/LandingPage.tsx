@@ -7,22 +7,25 @@ import { LandingTextWrapper } from './components/LandingTextWrapper';
 import { Button } from '../../components/ui/Button/Button';
 import { LandingButtonWrapper } from './components/LandingButtonWrapper';
 import { LandingPageWrapper } from './components/LandingPageWrapper';
+import { LandingInformation } from './components/LandingInformation';
 
 export const LandingPage: React.FC = () => (
   <LandingPageWrapper>
     <ImageWrapper>
       <MainImage imageSize='mobile' />
     </ImageWrapper>
-    <LandingTextWrapper>
-      <H1 weight='semi-bold'> Change the game. </H1>
-      <H3 color='secondary'>
-        Meet the most talented developers in your zone, network, and share cool
-        hacks.
-      </H3>
-    </LandingTextWrapper>
-    <LandingButtonWrapper>
-      <Button color='primary'>Sign up</Button>
-      <Button color='transparent'>Login</Button>
-    </LandingButtonWrapper>
+    <LandingInformation>
+      <LandingTextWrapper>
+        <H1 weight='semi-bold'> Change the game. </H1>
+        <H3 color='secondary'>
+          Meet the most talented developers in your zone, network, and share cool
+          hacks.
+        </H3>
+      </LandingTextWrapper>
+      <LandingButtonWrapper>
+        <Button color='primary'>Sign up</Button>
+        <Button color='transparent'>Login</Button>
+      </LandingButtonWrapper>
+    </LandingInformation>
   </LandingPageWrapper>
 );
