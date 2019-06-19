@@ -5,6 +5,7 @@ import { H1 } from '../../components/ui/H1/H1';
 import { H3 } from '../../components/ui/H3/H3';
 import { LandingTextWrapper } from './components/LandingTextWrapper';
 import { Button } from '../../components/ui/Button/Button';
+import { LandingButtonWrapper } from './components/LandingButtonWrapper';
 
 export const LandingPage: React.FC = () => (
   <React.Fragment>
@@ -17,8 +18,10 @@ export const LandingPage: React.FC = () => (
         Meet the most talented developers in your zone, network, and share cool
         hacks.
       </H3>
-      <Button color='primary'>Sign up</Button>
-      <Button color='transparent'>Login</Button>
+      <LandingButtonWrapper>
+        <Button color='primary'>Sign up</Button>
+        <Button color='transparent'>Login</Button>
+      </LandingButtonWrapper>
     </LandingTextWrapper>
   </React.Fragment>
 );
