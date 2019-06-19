@@ -9,13 +9,13 @@ export interface IButtonProps {
 export const Button = styled.button<IButtonProps>`
   background-color: ${props => backgroundColor(props.color)};
   border: 3px solid ${props => borderColor(props.color)}  
-  border-radius: 20px;
+  border-radius: 30px;
   color: ${props => fontColor(props.color)};
   cursor: pointer;
   display: block;
   font-family: Montserrat;
   font-weight: 600;
-  height: 40px;
+  height: 50px;
   outline: none;
-  width: 200px;
+  width: 240px;
 `;

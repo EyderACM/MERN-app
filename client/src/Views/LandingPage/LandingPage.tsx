@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainImage } from '../../components/MainImage/MainImage';
 import { ImageWrapper } from './components/ImageWrapper';
-import { H1 } from '../../components/ui/H1/H1';
+import { TitleText } from './components/TitleText';
 import { H3 } from '../../components/ui/H3/H3';
 import { LandingTextWrapper } from './components/LandingTextWrapper';
 import { Button } from '../../components/ui/Button/Button';
@@ -16,10 +16,11 @@ export const LandingPage: React.FC = () => (
     </ImageWrapper>
     <LandingInformation>
       <LandingTextWrapper>
-        <H1 weight='semi-bold'> Change the game. </H1>
+        <TitleText weight='semi-bold' color='primary'>
+          Change the game.
+        </TitleText>
         <H3 color='secondary'>
-          Meet the most talented developers in your zone, network, and share cool
-          hacks.
+          Meet the most talented developers in your zone, network, and share cool hacks.
         </H3>
       </LandingTextWrapper>
       <LandingButtonWrapper>
