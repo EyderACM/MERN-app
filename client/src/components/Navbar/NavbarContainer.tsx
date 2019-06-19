@@ -11,7 +11,7 @@ export const NavbarContainer = styled.div<INavbarContainerProps>`
   background: ${props => (props.dynamic ? 'white' : Colors.PRIMARY_BLUE)}
   color: black;
   display: flex;      
-  height: 100px;
+  height: 75px;
   justify-content: center;
   position: fixed;
   width: 100vw;
