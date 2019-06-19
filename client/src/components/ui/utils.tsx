@@ -14,16 +14,14 @@ export const fontWeight = (variant: String = 'regular') => {
   return fontWeight;
 };
 
-export const fontColor = (variant: String = 'primary') => {
-  let colorPicked;
+export const fontColor = (variant: String = 'white') => {
   switch (variant) {
     case 'primary':
-      colorPicked = Colors.PRIMARY_BLUE;
-      break;
+      return Colors.PRIMARY_BLUE;
     case 'secondary':
       return Colors.SCARY_GREY;
   }
-  return colorPicked;
+  return 'white';
 };
 
 export const imageSize = (variant: String = 'mobile') => {

@@ -6,9 +6,10 @@ import { H3 } from '../../components/ui/H3/H3';
 import { LandingTextWrapper } from './components/LandingTextWrapper';
 import { Button } from '../../components/ui/Button/Button';
 import { LandingButtonWrapper } from './components/LandingButtonWrapper';
+import { LandingPageWrapper } from './components/LandingPageWrapper';
 
 export const LandingPage: React.FC = () => (
-  <React.Fragment>
+  <LandingPageWrapper>
     <ImageWrapper>
       <MainImage imageSize='mobile' />
     </ImageWrapper>
@@ -23,5 +24,5 @@ export const LandingPage: React.FC = () => (
       <Button color='primary'>Sign up</Button>
       <Button color='transparent'>Login</Button>
     </LandingButtonWrapper>
-  </React.Fragment>
+  </LandingPageWrapper>
 );
