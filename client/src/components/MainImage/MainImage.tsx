@@ -12,7 +12,7 @@ export const MainImage = (props: IMainImageProps) => (
     xmlns='http://www.w3.org/2000/svg'
     width={imageSize(props.imageSize)}
     height={imageSize(props.imageSize)}
-    viewBox='0 0 830.3448 665.26174'
+    viewBox='0 0 830.3448 450'
   >
     <title>insert block</title>
     <polygon
