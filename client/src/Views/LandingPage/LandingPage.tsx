@@ -1,7 +1,7 @@
 import React from 'react';
 import { MainImage } from '../../components/MainImage/MainImage';
 import { ImageWrapper } from './components/ImageWrapper';
-import { TitleText } from './components/TitleText';
+import { TitleText } from '../../components/ui/TitleText/TitleText';
 import { H3 } from '../../components/ui/H3/H3';
 import { LandingTextWrapper } from './components/LandingTextWrapper';
 import { Button } from '../../components/ui/Button/Button';

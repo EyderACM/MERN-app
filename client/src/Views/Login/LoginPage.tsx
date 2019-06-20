@@ -1,9 +1,11 @@
 import React from 'react';
 import { LoginPageWrapper } from './components/LoginPageWrapper';
-import { H1 } from '../../components/ui/H1/H1';
+import { TitleText } from '../../components/ui/TitleText/TitleText';
 
 export const LoginPage = () => (
   <LoginPageWrapper>
-    <H1 color='primary'>Login</H1>
+    <TitleText color='primary' weight='semi-bold'>
+      Create Account
+    </TitleText>
   </LoginPageWrapper>
 );

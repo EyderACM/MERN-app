@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { H1 } from '../../../components/ui/H1/H1';
+import { H1 } from '../H1/H1';
 import * as Units from '../../../styles/Units';
 
 export const TitleText = styled(H1)`

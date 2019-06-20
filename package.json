@@ -30,6 +30,7 @@
     "config": "^3.1.0",
     "express": "^4.17.1",
     "express-validator": "^5.3.1",
+    "formik": "^1.5.7",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
