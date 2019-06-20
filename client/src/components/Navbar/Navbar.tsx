@@ -6,6 +6,7 @@ import { NavbarOptionsContainer } from './NavbarOptionsContainer';
 import { Link } from 'react-router-dom';
 import { NavbarTopList } from './NavbarTopList';
 import { NavbarListItem } from './NavbarListItem';
+import { NavbarListLink } from './NavbarListLink';
 
 export const Navbar: React.FC = () => (
   <NavbarContainer dynamic={true}>
@@ -14,23 +15,17 @@ export const Navbar: React.FC = () => (
       <NavbarTopList>
         <NavbarListItem>
           <H4>
-            <Link to='/profiles' style={{ textDecoration: 'none' }}>
-              Developers
-            </Link>
+            <NavbarListLink to='/profiles'>Developers</NavbarListLink>
           </H4>
         </NavbarListItem>
         <NavbarListItem>
           <H4>
-            <Link to='/Login' style={{ textDecoration: 'none' }}>
-              Login
-            </Link>
+            <NavbarListLink to='/Login'>Login</NavbarListLink>
           </H4>
         </NavbarListItem>
         <NavbarListItem>
           <H4>
-            <Link to='/SignUp' style={{ textDecoration: 'none' }}>
-              Sign Up
-            </Link>
+            <NavbarListLink to='/SignUp'>Sign Up</NavbarListLink>
           </H4>
         </NavbarListItem>
       </NavbarTopList>
