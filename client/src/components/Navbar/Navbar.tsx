@@ -3,7 +3,6 @@ import { NavbarContainer } from './NavbarContainer';
 import { Logo } from '../ui/Logo/Logo';
 import { H4 } from '../ui/H4/H4';
 import { NavbarOptionsContainer } from './NavbarOptionsContainer';
-import { Link } from 'react-router-dom';
 import { NavbarTopList } from './NavbarTopList';
 import { NavbarListItem } from './NavbarListItem';
 import { NavbarListLink } from './NavbarListLink';
