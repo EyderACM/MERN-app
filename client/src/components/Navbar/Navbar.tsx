@@ -9,7 +9,7 @@ import { NavbarListLink } from './NavbarListLink';
 
 export const Navbar: React.FC = () => (
   <NavbarContainer dynamic={true}>
-    <NavbarListLink to='/landingPage'>
+    <NavbarListLink to='/'>
       <Logo color='primary'>Linkedon</Logo>
     </NavbarListLink>
     <NavbarOptionsContainer>

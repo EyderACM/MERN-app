@@ -10,7 +10,7 @@ export const App: React.FC = () => (
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route path='/landingPage' exact={true} component={LandingPage} />
+          <Route path='/' exact={true} component={LandingPage} />
         </Switch>
       </BrowserRouter>
     </GlobalWrapper>

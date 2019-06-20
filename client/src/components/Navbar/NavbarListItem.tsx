@@ -4,5 +4,5 @@ export const NavbarListItem = styled.li`
   text-decoration: none;
   text-align: center;
   padding: 10px 0;
-  width: 100px;
+  width: 115px;
 `;
