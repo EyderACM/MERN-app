@@ -8,6 +8,7 @@ import { Button } from '../../components/ui/Button/Button';
 import { LandingButtonWrapper } from './components/LandingButtonWrapper';
 import { LandingPageWrapper } from './components/LandingPageWrapper';
 import { LandingInformation } from './components/LandingInformation';
+import { Link } from 'react-router-dom';
 
 export const LandingPage: React.FC = () => (
   <LandingPageWrapper>
@@ -24,8 +25,12 @@ export const LandingPage: React.FC = () => (
         </H3>
       </LandingTextWrapper>
       <LandingButtonWrapper>
-        <Button color='primary'>Sign up</Button>
-        <Button color='transparent'>Login</Button>
+        <Link to='/signup' style={{ textDecoration: 'none' }}>
+          <Button color='primary'>Sign up</Button>
+        </Link>
+        <Link to='/login' style={{ textDecoration: 'none' }}>
+          <Button color='transparent'>Login</Button>
+        </Link>
       </LandingButtonWrapper>
     </LandingInformation>
   </LandingPageWrapper>
