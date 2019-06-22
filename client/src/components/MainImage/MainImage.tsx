@@ -97,20 +97,8 @@ export const MainImage = (props: IMainImageProps) => (
       transform='translate(106.59329 -487.6919) rotate(35.37103)'
       fill='#f0f0f0'
     />
-    <ellipse
-      cx='203.97354'
-      cy='653.24709'
-      rx='182.62275'
-      ry='12.01465'
-      fill='#f2f2f2'
-    />
-    <ellipse
-      cx='647.72205'
-      cy='603.66625'
-      rx='182.62275'
-      ry='12.01465'
-      fill='#f2f2f2'
-    />
+    <ellipse cx='203.97354' cy='653.24709' rx='182.62275' ry='12.01465' fill='#f2f2f2' />
+    <ellipse cx='647.72205' cy='603.66625' rx='182.62275' ry='12.01465' fill='#f2f2f2' />
     <line
       x1='21.3448'
       y1='579.62296'
@@ -118,8 +106,8 @@ export const MainImage = (props: IMainImageProps) => (
       y2='579.70218'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
     />
     <circle
       cx='574.3448'
@@ -127,8 +115,8 @@ export const MainImage = (props: IMainImageProps) => (
       r='11'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
     />
     <rect
       x='131.3448'
@@ -137,8 +125,8 @@ export const MainImage = (props: IMainImageProps) => (
       height='24'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
     />
     <rect
       x='162.3448'
@@ -147,8 +135,8 @@ export const MainImage = (props: IMainImageProps) => (
       height='24'
       fill='none'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
     />
     <line
       x1='32.32009'
@@ -157,8 +145,8 @@ export const MainImage = (props: IMainImageProps) => (
       y2='507.09534'
       fill='#3f3d56'
       stroke='#3f3d56'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
     />
     <circle cx='32.32009' cy='507.09534' r='10.52282' fill='#3f3d56' />
     <path
@@ -198,13 +186,7 @@ export const MainImage = (props: IMainImageProps) => (
       rx='1.6126'
       fill='#3f3d56'
     />
-    <rect
-      x='224.57206'
-      width='285.17603'
-      height='579.57834'
-      rx='35.69395'
-      fill='#3f3d56'
-    />
+    <rect x='224.57206' width='285.17603' height='579.57834' rx='35.69395' fill='#3f3d56' />
     <rect
       x='339.65104'
       y='17.30784'
@@ -242,8 +224,8 @@ export const MainImage = (props: IMainImageProps) => (
       y2='271.47463'
       fill='none'
       stroke='#6c63ff'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
       opacity='0.3'
     />
     <line
@@ -253,8 +235,8 @@ export const MainImage = (props: IMainImageProps) => (
       y2='271.47463'
       fill='none'
       stroke='#6c63ff'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
       opacity='0.3'
     />
     <line
@@ -264,8 +246,8 @@ export const MainImage = (props: IMainImageProps) => (
       y2='499.54649'
       fill='none'
       stroke='#6c63ff'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
       opacity='0.3'
     />
     <line
@@ -275,63 +257,21 @@ export const MainImage = (props: IMainImageProps) => (
       y2='499.54649'
       fill='none'
       stroke='#6c63ff'
-      stroke-miterlimit='10'
-      stroke-width='2'
+      strokeMiterlimit='10'
+      strokeWidth='2'
       opacity='0.3'
     />
-    <rect
-      x='532.03342'
-      y='431.78601'
-      width='250.38323'
-      height='171.88024'
-      fill='#6c63ff'
-    />
+    <rect x='532.03342' y='431.78601' width='250.38323' height='171.88024' fill='#6c63ff' />
     <polygon
       points='782.417 603.666 729.347 499.996 711.351 549.127 647.722 455.75 605.578 513.594 585.089 488.922 532.033 554.515 532.033 603.666 782.417 603.666'
       fill='#3f3d56'
     />
     <circle cx='751.84181' cy='471.45068' r='18.17964' fill='#3f3d56' />
-    <rect
-      x='73.41067'
-      y='479.71415'
-      width='250.38323'
-      height='171.88024'
-      fill='#6c63ff'
-    />
-    <rect
-      x='93.65618'
-      y='517.72613'
-      width='209.89222'
-      height='9.91617'
-      fill='#3f3d56'
-    />
-    <rect
-      x='93.65618'
-      y='539.21116'
-      width='209.89222'
-      height='9.91617'
-      fill='#3f3d56'
-    />
-    <rect
-      x='93.65618'
-      y='560.69619'
-      width='209.89222'
-      height='9.91617'
-      fill='#3f3d56'
-    />
-    <rect
-      x='93.65618'
-      y='582.18122'
-      width='209.89222'
-      height='9.91617'
-      fill='#3f3d56'
-    />
-    <rect
-      x='93.65618'
-      y='603.66625'
-      width='209.89222'
-      height='9.91617'
-      fill='#3f3d56'
-    />
+    <rect x='73.41067' y='479.71415' width='250.38323' height='171.88024' fill='#6c63ff' />
+    <rect x='93.65618' y='517.72613' width='209.89222' height='9.91617' fill='#3f3d56' />
+    <rect x='93.65618' y='539.21116' width='209.89222' height='9.91617' fill='#3f3d56' />
+    <rect x='93.65618' y='560.69619' width='209.89222' height='9.91617' fill='#3f3d56' />
+    <rect x='93.65618' y='582.18122' width='209.89222' height='9.91617' fill='#3f3d56' />
+    <rect x='93.65618' y='603.66625' width='209.89222' height='9.91617' fill='#3f3d56' />
   </svg>
 );
