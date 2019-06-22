@@ -1,9 +1,13 @@
 import React from 'react';
 import { SignupPageWrapper } from './components/SignupPageWrapper';
-import { H1 } from '../../components/ui/H1/H1';
+import { TitleText } from '../../components/ui/TitleText/TitleText';
+import { SignUpPageForm } from '../../components/Forms/SignupPageForm/SignupPageForm';
 
 export const SignupPage = () => (
   <SignupPageWrapper>
-    <H1 color='primary'>Sign up</H1>
+    <TitleText color='primary' weight='semi-bold'>
+      Create Account
+    </TitleText>
+    <SignUpPageForm />
   </SignupPageWrapper>
 );

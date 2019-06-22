@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { InputField } from '../../ui/Form/InputField';
-import { FormWrapper } from '../../Forms/FormWrapper';
+import { FormWrapper } from '../FormWrapper';
 import { Button } from '../../ui/Button/Button';
-import { FormButtonWrapper } from '../../Forms/FormButtonWrapper';
+import { FormButtonWrapper } from '../FormButtonWrapper';
 
-export const LoginPageForm = () => (
+export const SignUpPageForm = () => (
   // TODO - add validation to te form
   <Formik
-    initialValues={{ email: '', password: '' }}
+    initialValues={{ username: '', email: '', password: '', passwordConfirm: '' }}
     onSubmit={(values, { setSubmitting }) => {
       setTimeout(() => {
         alert(JSON.stringify(values, null, 2));
@@ -19,11 +19,13 @@ export const LoginPageForm = () => (
     {({ isSubmitting }) => (
       <Form>
         <FormWrapper>
-          <InputField placeholder='email' type='email' name='email' />
-          <InputField placeholder='password' type='password' name='password' />
+          <InputField placeholder='Username' type='username' name='username' />
+          <InputField placeholder='Email' type='email' name='email' />
+          <InputField placeholder='Password' type='password' name='password' />
+          <InputField placeholder='Confirm Pasword' type='password' name='passwordConfirm' />
           <FormButtonWrapper>
             <Button type='submit' disabled={isSubmitting}>
-              Login
+              Sign up
             </Button>
           </FormButtonWrapper>
         </FormWrapper>
