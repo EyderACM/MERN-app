@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form } from 'formik';
 import { InputField } from '../../ui/Form/InputField';
 import { FormWrapper } from '../FormWrapper';
 import { Button } from '../../ui/Button/Button';
@@ -10,10 +10,11 @@ export const SignUpPageForm = () => (
   <Formik
     initialValues={{ username: '', email: '', password: '', passwordConfirm: '' }}
     onSubmit={(values, { setSubmitting }) => {
-      setTimeout(() => {
+      if (values.password !== values.passwordConfirm) {
+        alert('Passwords do not match!');
+      } else {
         alert(JSON.stringify(values, null, 2));
-        setSubmitting(false);
-      }, 400);
+      }
     }}
   >
     {({ isSubmitting }) => (
