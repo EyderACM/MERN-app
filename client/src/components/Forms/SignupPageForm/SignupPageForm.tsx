@@ -17,6 +17,7 @@ export const SignUpPageForm = () => (
     }}
   >
     {({ errors, touched, isSubmitting }) => (
+      //TODO - Improve error message
       <Form>
         <FormWrapper>
           <InputField
@@ -38,7 +39,12 @@ export const SignUpPageForm = () => (
             name='password'
           />
           <InputField
-            haserror={errors.passwordConfirm && touched.passwordConfirm ? 1 : 0}
+            haserror={
+              (errors.passwordConfirm && touched.passwordConfirm) ||
+              (errors.password && touched.password)
+                ? 1
+                : 0
+            }
             placeholder='Confirm Pasword'
             type='password'
             name='passwordConfirm'
