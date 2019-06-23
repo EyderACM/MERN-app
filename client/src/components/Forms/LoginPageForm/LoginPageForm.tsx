@@ -19,11 +19,11 @@ export const LoginPageForm = () => (
     {({ isSubmitting }) => (
       <Form>
         <FormWrapper>
-          <InputField placeholder='email' type='email' name='email' />
-          <InputField placeholder='password' type='password' name='password' />
+          <InputField placeholder='Email' type='email' name='email' />
+          <InputField placeholder='Password' type='password' name='password' />
           <FormButtonWrapper>
             <Button type='submit' disabled={isSubmitting}>
-              Login
+              Sign in
             </Button>
           </FormButtonWrapper>
         </FormWrapper>

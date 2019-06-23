@@ -11,9 +11,8 @@ export const SignUpPageForm = () => (
   <Formik
     initialValues={{ username: '', email: '', password: '', passwordConfirm: '' }}
     validationSchema={SignupValidation}
-    onSubmit={(values, { setSubmitting }) => {
-      alert('Yeah');
-      setSubmitting(false);
+    onSubmit={async (values, { setSubmitting }) => {
+      console.log('Yeahhhh');
     }}
   >
     {({ errors, touched, isSubmitting }) => (
