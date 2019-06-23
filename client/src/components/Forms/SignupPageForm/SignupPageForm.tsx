@@ -7,7 +7,6 @@ import { FormButtonWrapper } from '../FormButtonWrapper';
 import { SignupValidation } from '../../../schema/SignupValidation';
 
 export const SignUpPageForm = () => (
-  // TODO - add validation to te form
   <Formik
     initialValues={{ username: '', email: '', password: '', passwordConfirm: '' }}
     validationSchema={SignupValidation}

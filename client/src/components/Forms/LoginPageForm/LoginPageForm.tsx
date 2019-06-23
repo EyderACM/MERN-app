@@ -6,7 +6,7 @@ import { Button } from '../../ui/Button/Button';
 import { FormButtonWrapper } from '../../Forms/FormButtonWrapper';
 
 export const LoginPageForm = () => (
-  // TODO - add validation to te form
+  // TODO - add validation to the form
   <Formik
     initialValues={{ email: '', password: '' }}
     onSubmit={(values, { setSubmitting }) => {
