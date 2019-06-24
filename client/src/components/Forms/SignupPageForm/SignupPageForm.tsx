@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { Formik, Form } from 'formik';
+import { connect } from 'react-redux';
 import { InputField } from '../../ui/Form/InputField';
 import { FormWrapper } from '../FormWrapper';
 import { Button } from '../../ui/Button/Button';
 import { FormButtonWrapper } from '../FormButtonWrapper';
 import { SignupValidation } from '../../../schema/SignupValidation';
+import { setAlert } from '../../../actions/alert';
 
-export const SignUpPageForm = () => (
+const SignUpPageForm = (props: any) => (
   <Formik
     initialValues={{ username: '', email: '', password: '', passwordConfirm: '' }}
     validationSchema={SignupValidation}
@@ -57,3 +59,8 @@ export const SignUpPageForm = () => (
     )}
   </Formik>
 );
+
+export default connect(
+  null,
+  { setAlert }
+)(SignUpPageForm);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { SignupPageWrapper } from './components/SignupPageWrapper';
 import { TitleText } from '../../components/ui/TitleText/TitleText';
-import { SignUpPageForm } from '../../components/Forms/SignupPageForm/SignupPageForm';
+import SignUpPageForm from '../../components/Forms/SignupPageForm/SignupPageForm';
 import { H4 } from '../../components/ui/H4/H4';
 import { Link } from 'react-router-dom';
 
