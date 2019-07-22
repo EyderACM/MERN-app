@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./client/src",
     "outDir": "build/dist",
     "module": "esnext",
     "target": "es6",
@@ -9,7 +9,7 @@
     "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": ".",
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -21,6 +21,7 @@
     "typeRoots": ["./types", "./node_modules/@types"],
     "types": ["react", "jest"]
   },
+  "include": ["client/src"],
   "exclude": [
     "node_modules",
     "build",

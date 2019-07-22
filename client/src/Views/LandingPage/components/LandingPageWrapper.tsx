@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import * as Units from '../../../styles/Units';
+import styled from "styled-components";
+import * as Units from "styles/Units";
 
 export const LandingPageWrapper = styled.div`
   align-items: center;
@@ -14,5 +14,4 @@ export const LandingPageWrapper = styled.div`
     flex-direction: row-reverse;
     justify-content: space-around;
   }
-
 `;

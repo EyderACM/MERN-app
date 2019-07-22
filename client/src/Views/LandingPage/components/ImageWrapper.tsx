@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import * as Units from '../../../styles/Units';
+import styled from "styled-components";
+import * as Units from "styles/Units";
 
 export const ImageWrapper = styled.div`
   display: flex;

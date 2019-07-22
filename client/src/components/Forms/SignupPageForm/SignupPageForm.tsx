@@ -8,7 +8,7 @@ import { FormButtonWrapper } from '../FormButtonWrapper';
 import { SignupValidation } from '../../../schema/SignupValidation';
 import { setAlert } from '../../../actions/alert';
 
-const SignUpPageForm = (props: any) => (
+const SignUpPageForm: React.FC = (props: any) => (
   <Formik
     initialValues={{ username: '', email: '', password: '', passwordConfirm: '' }}
     validationSchema={SignupValidation}
