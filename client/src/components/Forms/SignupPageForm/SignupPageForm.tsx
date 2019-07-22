@@ -8,7 +8,7 @@ import { FormButtonWrapper } from "../FormButtonWrapper";
 import { SignupValidation } from "../../../schema/SignupValidation";
 import { setAlert } from "../../../actions/alert";
 
-const SignUpPageForm: React.FC = (props: any) => {
+const SignUpPageForm: React.FC = () => {
   const hasErrorEvaluate = (
     param1: string | undefined,
     param2: boolean | undefined

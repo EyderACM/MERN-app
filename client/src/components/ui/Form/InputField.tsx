@@ -1,17 +1,18 @@
-import styled from 'styled-components';
-import { Field } from 'formik';
-import * as Colors from '../../../styles/Colors';
-import * as Units from '../../../styles/Units';
-import { colorFromStatus } from './utils';
+import styled from "styled-components";
+import { Field } from "formik";
+import * as Colors from "styles/Colors";
+import * as Units from "styles/Units";
+import { colorFromStatus } from "./utils";
 
 export interface IInputField {
   haserror?: true | false;
 }
 
 export const InputField = styled(Field)<IInputField>`
-  background: ${props => colorFromStatus(props.haserror)};
+  background: ${Colors.LOVELY_GREY};
   color: ${Colors.LETTERY_GREY};
-  border: none;
+  border: ${props =>
+    props.haserror ? `2px solid ${colorFromStatus(props.haserror)}` : "none"};
   border-radius: 5px;
   margin: 7px 0;
   height: 40px;
