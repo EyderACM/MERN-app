@@ -1,5 +1,5 @@
 # MERN-app
-A social made made to understand authorization in the MERN stack [on hold]
+A social made made to understand authorization in the MERN stack [on hold] x2
 
 ## TODO
 <br>
